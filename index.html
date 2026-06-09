@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Amiira Foosi Daahir</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #2d3748;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .portfolio-card {
+            background: #ffffff;
+            max-width: 650px;
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 40px 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        /* Goobta sawirka profile-ka */
+        .profile-container {
+            width: 140px;
+            height: 140px;
+            margin: 0 auto 15px auto;
+            border-radius: 50%;
+            border: 4px solid #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            background-color: #edf2f7;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+        }
+
+        .card-header h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            letter-spacing: 0.5px;
+        }
+
+        .card-header .location {
+            font-size: 1rem;
+            opacity: 0.9;
+            font-weight: 500;
+        }
+
+        .card-body {
+            padding: 40px 30px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            color: #1e3c72;
+            margin-bottom: 15px;
+            position: relative;
+            padding-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: #2a5298;
+            border-radius: 2px;
+        }
+
+        .info-text {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #4a5568;
+            text-align: justify;
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #2a5298;
+        }
+
+        .card-footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.85rem;
+            color: #a0aec0;
+            border-top: 1px solid #edf2f7;
+            background: #fafbfc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="portfolio-card">
+        <div class="card-header">
+            <div class="profile-container">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop" alt="Amiira Foosi Daahir" class="profile-img">
+            </div>
+            <h1>Amiira Foosi Daahir</h1>
+            <div class="location">📍 Hargeisa, Somaliland</div>
+        </div>
+
+        <div class="card-body">
+            <h2 class="section-title">Aasaaska IT-ga & Koombyutarka</h2>
+            <p class="info-text">
+                Waxaan ahay ardayad barata cilmiga IT-ga (Information Technology). 
+                Waxaan aqoon u leeyahay aasaaska koombyutarka (Computer Basics), 
+                qaybaha uu ka kooban jay hardware iyo software, maamulka faylasha, 
+                iyo isticmaalka nidaamyada shaqada ee online-ka ah.
+            </p>
+        </div>
+
+        <div class="card-footer">
+            <p>&copy; 2026 Amiira Foosi Daahir. All Rights Reserved.</p>
+        </div>
+    </div>
+
+</body>
+</html>
