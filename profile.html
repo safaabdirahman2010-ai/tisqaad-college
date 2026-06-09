@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safa Abdirahmaan - Portfolio</title>
+    <style>
+        /* 1. Habaynta Guud */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f3f4f6;
+            color: #1f2937;
+            line-height: 1.7;
+            padding-bottom: 60px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 2. Qaybta Profilka iyo Madaxa (Hero Section) */
+        .profile-card {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #ffffff;
+            text-align: center;
+            padding: 60px 20px;
+            border-radius: 24px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            margin-top: 20px;
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+        .profile-card h1 {
+            font-size: 2.5rem;
+            margin-bottom: 8px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .profile-card p {
+            font-size: 1.2rem;
+            color: #e2e8f0;
+            font-weight: 300;
+        }
+
+        /* 3. Kaadhadhka Qaybaha Mareegta */
+        section {
+            background: #ffffff;
+            margin-top: 30px;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: #1e3c72;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 8px;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 4px;
+            background-color: #38bdf8;
+            border-radius: 2px;
+        }
+
+        /* 4. Grid-ka Xirfadaha */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .skill-card {
+            background: #f8fafc;
+            padding: 18px;
+            text-align: center;
+            border-radius: 12px;
+            font-weight: 600;
+            color: #334155;
+            border-top: 4px solid #2a5298;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        /* 5. Qaybta Macluumaadka La Xiriirka */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 1.1rem;
+        }
+
+        .badge {
+            background-color: #e0f2fe;
+            color: #0369a1;
+            padding: 6px 14px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            min-width: 90px;
+            text-align: center;
+        }
+
+        /* 6. Footer-ka Hoose */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive UI tag-yada */
+        @media (max-width: 768px) {
+            .profile-card h1 { font-size: 2rem; }
+            .profile-card p { font-size: 1rem; }
+            section { padding: 20px; }
+            .contact-item { flex-direction: column; align-items: flex-start; gap: 5px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header class="profile-card">
+            <img class="profile-img" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400" alt="Safa Abdirahmaan">
+            <h1>Safa Abdirahmaan Yousuf Sead</h1>
+            <p>Basics Computer & IT Student</p>
+        </header>
+
+        <section id="about">
+            <h2>Nagu Saabsan (About Me)</h2>
+            <p>Ku soo dhawoow mareegtayda rasmiga ah ee Portfolio-ga! Magacaygu waa <strong>Safa Abdirahmaan Yousuf Sead</strong>, waxaanan deganahay magaalada quruxda badan ee <strong>Hargeisa, Somaliland</strong>.</p>
+            <p style="margin-top: 12px;">Haddada waxaan si qoto dheer u baranayaa aasaaska cilmiga Computer-ka iyo IT-ga (Basics of Computer & IT). Waxaan aad u xiiseeyaa barashada tignoolajiyada casriga ah, dhismaha boggaga internet-ka, iyo sidii aan xirfadahayga heer sare u gaarsiin lahaa.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Xirfadaha (Skills)</h2>
+            <div class="skills-grid">
+                <div class="skill-card">Aasaaska Computer-ka</div>
+                <div class="skill-card">Hordhaca IT-ga</div>
+                <div class="skill-card">Dhismaha Web-ka (HTML & CSS)</div>
+                <div class="skill-card">Git & GitHub Basics</div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>La Xiriir (Contact Me)</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="badge">Goobta</span> <span>Hargeisa, Somaliland</span>
+                </div>
+                <div class="contact-item">
+                    <span class="badge">Hadafka</span> <span>Noqoshada IT Professional Isku-kalsoon</span>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Safa Abdirahmaan. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
